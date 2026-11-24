@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123d2d">
+  <meta name="description" content="Maya Keller, a nationally ranked junior tennis player, has spent two years teaching tennis for free to Jewish kids and kids from disadvantaged backgrounds.">
+  <title>Tikkun Tennis | Free Tennis with Maya Keller</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="index.html" aria-label="Tikkun Tennis home"><span class="mark">✳</span> Tikkun Tennis</a>
+      <button class="menu" aria-label="Toggle navigation" aria-expanded="false" onclick="toggleMenu()">☰</button>
+      <nav id="nav">
+        <a href="index.html" class="active" aria-current="page">Home</a>
+        <a href="mission.html">Maya's Mission</a>
+        <a href="lessons.html">Free Lessons</a>
+        <a href="achievements.html">Achievements</a>
+        <a href="maccabiah.html">Maccabiah 2026</a>
+        <a href="gallery.html">Gallery</a>
+        <a class="nav-cta" href="lessons.html">Come Play <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero-grid">
+          <div>
+            <div class="eyebrow">Free youth tennis · Led by Maya Keller</div>
+            <h1>A place for<br>every kid to <span>play.</span></h1>
+            <p class="lead">For two years, nationally ranked junior player Maya Keller has volunteered her time and expertise teaching tennis for free to Jewish kids and to any kids from disadvantaged backgrounds who deserve a chance to play.</p>
+            <div class="hero-actions">
+              <a class="button" href="lessons.html">Explore free lessons <span aria-hidden="true">→</span></a>
+              <a class="button secondary" href="mission.html">Maya's mission</a>
+            </div>
+            <p class="hero-note">Jewish-founded. Open to everyone. Always free to attend.</p>
+          </div>
+          <div class="photo-art">
+            <img src="images/maya-serving.jpg" alt="Maya Keller serving on an outdoor hard court">
+            <div class="ball" aria-hidden="true"></div>
+            <div class="court-tag"><strong>Everyone is welcome.</strong><small>Sundays, 6–8 PM · Glenview, Illinois</small></div>
+          </div>
+        </div>
+        <div class="facts" aria-label="Highlights">
+          <div class="fact"><b>#13</b><span>Midwest ranking in her age division</span></div>
+          <div class="fact"><b>#125</b><span>National ranking in her age division</span></div>
+          <div class="fact"><b>Silver medal</b><span>Doubles · Maccabiah Games, Tel Aviv 2026</span></div>
+          <div class="fact"><b>2 years</b><span>Teaching kids tennis, completely free</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tint">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">Explore</div>
+          <h2>Get to know Maya and the program.</h2>
+          <p>A nationally ranked player who gives her time back to the next generation of players.</p>
+        </div>
+        <div class="teasers">
+          <a class="teaser" href="mission.html">
+            <img src="images/maya-portrait.jpg" alt="Portrait of Maya Keller">
+            <div><h3>Maya's mission</h3><p>Why Maya teaches tennis for free, and who the program is for.</p><span class="more">Read more →</span></div>
+          </a>
+          <a class="teaser" href="achievements.html">
+            <img src="images/state-runner-up.jpg" alt="Maya holding a State Runner-Up trophy">
+            <div><h3>Achievements</h3><p>Regional and national rankings, plus national championship play.</p><span class="more">See results →</span></div>
+          </a>
+          <a class="teaser" href="maccabiah.html">
+            <img src="images/maccabiah-team-silver.jpg" alt="Team USA tennis players at the Maccabiah Games">
+            <div><h3>Maccabiah 2026</h3><p>A silver medal in doubles for Team USA in Tel Aviv.</p><span class="more">See the story →</span></div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="cta">
+      <div class="eyebrow">Pick up a racket. Find your people.</div>
+      <h2>There is room for you on the court.</h2>
+      <p>Join Maya on Sundays from 6–8 PM at Ridge and Valley Tennis Club in Glenview, Illinois. Kids and teens of every background are welcome, and it is always free.</p>
+      <a class="button" href="lessons.html">See class details <span aria-hidden="true">→</span></a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <div><strong>✳ Tikkun Tennis</strong><br>A place for every kid to play.</div>
+      <div>Free youth tennis · Glenview, Illinois</div>
+      <div>© <span id="year"></span> Tikkun Tennis</div>
+    </div>
+  </footer>
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('nav');
+      const button = document.querySelector('.menu');
+      const open = nav.classList.toggle('open');
+      button.setAttribute('aria-expanded', String(open));
+    }
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

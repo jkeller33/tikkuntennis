@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123d2d">
+  <meta name="description" content="Why Maya Keller teaches tennis for free to Jewish kids and kids from disadvantaged backgrounds.">
+  <title>Maya's Mission | Tikkun Tennis</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="index.html" aria-label="Tikkun Tennis home"><span class="mark">✳</span> Tikkun Tennis</a>
+      <button class="menu" aria-label="Toggle navigation" aria-expanded="false" onclick="toggleMenu()">☰</button>
+      <nav id="nav">
+        <a href="index.html">Home</a>
+        <a href="mission.html" class="active" aria-current="page">Maya's Mission</a>
+        <a href="lessons.html">Free Lessons</a>
+        <a href="achievements.html">Achievements</a>
+        <a href="maccabiah.html">Maccabiah 2026</a>
+        <a href="gallery.html">Gallery</a>
+        <a class="nav-cta" href="lessons.html">Come Play <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="wrap">
+        <div class="eyebrow">Maya's mission</div>
+        <h1>Opening the court <span>to everyone.</span></h1>
+        <p class="lead">Tennis should be an opportunity, not a privilege. For two years, Maya has been donating her time to make that true for kids in her community.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap about-grid">
+        <div class="portrait"><img src="images/maya-portrait.jpg" alt="Portrait of Maya Keller"></div>
+        <div class="about-copy">
+          <div class="eyebrow">Why Tikkun Tennis</div>
+          <h2>More than a game.</h2>
+          <p>Tikkun Tennis is a Jewish-founded initiative inspired by the idea that our communities grow stronger when more young people have the chance to participate, learn, and belong.</p>
+          <p>Tennis can be expensive to start. Equipment, lessons, and club fees can make the sport feel out of reach. Maya, a nationally ranked junior player, shares the same skills she uses in national competition so more kids can pick up a racket, try something new, and enjoy the game.</p>
+          <p>The program began by serving Jewish kids, and its welcome is universal. You do not need to be Jewish to join. Kids from any background, especially those who might not otherwise get the chance to play, are welcome.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="tint">
+      <div class="wrap about-grid">
+        <div class="about-card">
+          <div class="eyebrow" style="color:var(--lime)">Two years of giving back</div>
+          <div class="big">Free.<br>Always.</div>
+          <p>Maya volunteers her time. Families never pay for lessons.</p>
+        </div>
+        <div>
+          <div class="eyebrow">What we believe</div>
+          <h2>Building confidence, one rally at a time.</h2>
+          <div class="values">
+            <div class="value"><b>Open to all</b><span>Every background and experience level is welcome.</span></div>
+            <div class="value"><b>Free to play</b><span>No class fee or payment to participate.</span></div>
+            <div class="value"><b>Learn from a competitor</b><span>Coaching from a nationally ranked junior player.</span></div>
+            <div class="value"><b>Community first</b><span>Make friends and connections while enjoying the game.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cta">
+      <div class="eyebrow">Pick up a racket. Find your people.</div>
+      <h2>There is room for you on the court.</h2>
+      <p>Join Maya on Sundays from 6–8 PM at Ridge and Valley Tennis Club in Glenview, Illinois. Kids and teens of every background are welcome, and it is always free.</p>
+      <a class="button" href="lessons.html">See class details <span aria-hidden="true">→</span></a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <div><strong>✳ Tikkun Tennis</strong><br>A place for every kid to play.</div>
+      <div>Free youth tennis · Glenview, Illinois</div>
+      <div>© <span id="year"></span> Tikkun Tennis</div>
+    </div>
+  </footer>
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('nav');
+      const button = document.querySelector('.menu');
+      const open = nav.classList.toggle('open');
+      button.setAttribute('aria-expanded', String(open));
+    }
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

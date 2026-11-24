@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123d2d">
+  <meta name="description" content="Free youth tennis every Sunday, 6–8 PM, at Ridge and Valley Tennis Club in Glenview, Illinois.">
+  <title>Free Lessons | Tikkun Tennis</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="index.html" aria-label="Tikkun Tennis home"><span class="mark">✳</span> Tikkun Tennis</a>
+      <button class="menu" aria-label="Toggle navigation" aria-expanded="false" onclick="toggleMenu()">☰</button>
+      <nav id="nav">
+        <a href="index.html">Home</a>
+        <a href="mission.html">Maya's Mission</a>
+        <a href="lessons.html" class="active" aria-current="page">Free Lessons</a>
+        <a href="achievements.html">Achievements</a>
+        <a href="maccabiah.html">Maccabiah 2026</a>
+        <a href="gallery.html">Gallery</a>
+        <a class="nav-cta" href="lessons.html">Come Play <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="wrap">
+        <div class="eyebrow">Come out and play</div>
+        <h1>Your Sunday tennis <span>plans are set.</span></h1>
+        <p class="lead">Whether it is your first time holding a racket or you have played before, come enjoy an evening of tennis with Maya and the Tikkun Tennis community.</p>
+      </div>
+    </section>
+
+    <section class="tint">
+      <div class="wrap">
+        <div class="schedule-grid">
+          <div class="schedule-card">
+            <h3>Class details</h3>
+            <div class="schedule-line"><div class="ico">📅</div><div><b>Every Sunday</b><span>Weekly community sessions</span></div></div>
+            <div class="schedule-line"><div class="ico">🕕</div><div><b>6:00–8:00 PM</b><span>Two-hour session</span></div></div>
+            <div class="schedule-line"><div class="ico">🎾</div><div><b>Kids and teenagers</b><span>Youth participants only</span></div></div>
+            <div class="schedule-line"><div class="ico">💚</div><div><b>Completely free</b><span>No cost to attend</span></div></div>
+          </div>
+          <div class="schedule-card">
+            <h3>Where to find us</h3>
+            <div class="schedule-line"><div class="ico">📍</div><div><b>Ridge and Valley Tennis Club</b><span>Glenview, Illinois</span></div></div>
+            <div class="schedule-line"><div class="ico">👟</div><div><b>What to bring</b><span>Comfortable athletic clothes, tennis shoes, and a water bottle.</span></div></div>
+            <div class="schedule-line"><div class="ico">🙌</div><div><b>First time? No problem.</b><span>Beginners are welcome. Come ready to give tennis a try.</span></div></div>
+            <p class="note">Please check with the organizer about racket availability, registration, weather cancellations, and any parent or guardian requirements before attending.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap about-grid">
+        <div class="about-card">
+          <div class="eyebrow" style="color:var(--lime)">Questions?</div>
+          <div class="big">Just ask.</div>
+          <p>Lesson questions are handled by Maya's parents.</p>
+        </div>
+        <div class="about-copy">
+          <div class="eyebrow">Get in touch</div>
+          <h2>Know a kid who would love to play?</h2>
+          <p>Send us a note about racket availability, registration, or anything else. We'll get back to you and help your child get on the court.</p>
+          <!-- IMPORTANT: Replace YOUR-EMAIL@example.com below with a parent's email address. -->
+          <p style="margin-top:22px"><a class="button" href="mailto:YOUR-EMAIL@example.com?subject=Tikkun%20Tennis%20free%20lessons">Email us about lessons <span aria-hidden="true">→</span></a></p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <div><strong>✳ Tikkun Tennis</strong><br>A place for every kid to play.</div>
+      <div>Free youth tennis · Glenview, Illinois</div>
+      <div>© <span id="year"></span> Tikkun Tennis</div>
+    </div>
+  </footer>
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('nav');
+      const button = document.querySelector('.menu');
+      const open = nav.classList.toggle('open');
+      button.setAttribute('aria-expanded', String(open));
+    }
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

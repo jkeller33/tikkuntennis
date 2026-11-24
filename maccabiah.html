@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123d2d">
+  <meta name="description" content="Maya Keller won a silver medal in doubles for Team USA at the Maccabiah Games in Tel Aviv, July 2026.">
+  <title>Maccabiah 2026 | Tikkun Tennis</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="index.html" aria-label="Tikkun Tennis home"><span class="mark">✳</span> Tikkun Tennis</a>
+      <button class="menu" aria-label="Toggle navigation" aria-expanded="false" onclick="toggleMenu()">☰</button>
+      <nav id="nav">
+        <a href="index.html">Home</a>
+        <a href="mission.html">Maya's Mission</a>
+        <a href="lessons.html">Free Lessons</a>
+        <a href="achievements.html">Achievements</a>
+        <a href="maccabiah.html" class="active" aria-current="page">Maccabiah 2026</a>
+        <a href="gallery.html">Gallery</a>
+        <a class="nav-cta" href="lessons.html">Come Play <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="wrap">
+        <div class="eyebrow">Maccabiah Games · Tel Aviv · July 2026</div>
+        <h1>Representing <span>Team USA.</span></h1>
+        <p class="lead">In July 2026, Maya traveled to Israel to compete for the United States at the Maccabiah Games in Tel Aviv, and came home with a silver medal in doubles.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="medal">
+          <div class="disc">SILVER</div>
+          <div><b>Silver medalist, doubles</b><span>Maccabiah Games, Tel Aviv, Israel · July 2026</span></div>
+        </div>
+        <div class="photo-grid two">
+          <figure><img src="images/maccabiah-opening.jpg" alt="Team USA marching in the Maccabiah Games opening ceremony"><figcaption>Marching with Team USA at the opening ceremony.</figcaption></figure>
+          <figure><img src="images/maccabiah-team-silver.jpg" alt="Team USA tennis players holding an American flag at the Maccabiah Games"><figcaption>With the Team USA tennis squad in Tel Aviv.</figcaption></figure>
+        </div>
+      </div>
+    </section>
+    <section class="cta">
+      <div class="eyebrow">Pick up a racket. Find your people.</div>
+      <h2>There is room for you on the court.</h2>
+      <p>Join Maya on Sundays from 6–8 PM at Ridge and Valley Tennis Club in Glenview, Illinois. Kids and teens of every background are welcome, and it is always free.</p>
+      <a class="button" href="lessons.html">See class details <span aria-hidden="true">→</span></a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <div><strong>✳ Tikkun Tennis</strong><br>A place for every kid to play.</div>
+      <div>Free youth tennis · Glenview, Illinois</div>
+      <div>© <span id="year"></span> Tikkun Tennis</div>
+    </div>
+  </footer>
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('nav');
+      const button = document.querySelector('.menu');
+      const open = nav.classList.toggle('open');
+      button.setAttribute('aria-expanded', String(open));
+    }
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

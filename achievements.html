@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123d2d">
+  <meta name="description" content="Maya Keller's tennis achievements: ranked 13th in the Midwest and 125th nationally in her age division.">
+  <title>Achievements | Tikkun Tennis</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="index.html" aria-label="Tikkun Tennis home"><span class="mark">✳</span> Tikkun Tennis</a>
+      <button class="menu" aria-label="Toggle navigation" aria-expanded="false" onclick="toggleMenu()">☰</button>
+      <nav id="nav">
+        <a href="index.html">Home</a>
+        <a href="mission.html">Maya's Mission</a>
+        <a href="lessons.html">Free Lessons</a>
+        <a href="achievements.html" class="active" aria-current="page">Achievements</a>
+        <a href="maccabiah.html">Maccabiah 2026</a>
+        <a href="gallery.html">Gallery</a>
+        <a class="nav-cta" href="lessons.html">Come Play <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="wrap">
+        <div class="eyebrow">On the court</div>
+        <h1>The experience behind <span>every lesson.</span></h1>
+        <p class="lead">Maya competes against the top junior players in the Midwest and across the country, and brings that experience to every kid she coaches.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="results">
+          <div class="result feature"><div class="badge">#13</div><div><b>Ranked 13th in the Midwest</b><span>One of the top players in the region for her age division.</span></div></div>
+          <div class="result feature"><div class="badge">#125</div><div><b>Ranked 125th in the nation</b><span>Nationally ranked in her age division.</span></div></div>
+          <div class="result"><div class="badge">🥈</div><div><b>Silver medal, doubles</b><span>Maccabiah Games · Tel Aviv · July 2026</span></div></div>
+          <div class="result"><div class="badge">USA</div><div><b>National Hardcourt Winter Championships</b><span>Competed against the country's top juniors.</span></div></div>
+          <div class="result"><div class="badge">USA</div><div><b>Summer National Championships</b><span>Rome, Georgia</span></div></div>
+          <div class="result"><div class="badge">🏆</div><div><b>Many national tournaments</b><span>A regular competitor on the national junior circuit.</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tint">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">Trophies and milestones</div>
+          <h2>Hard work that shows.</h2>
+        </div>
+        <div class="photo-grid">
+          <figure><img src="images/team-champions.jpg" alt="Maya holding the 2026 Girls Tennis Champions trophy"><figcaption>Girls Tennis Champions, 2026</figcaption></figure>
+          <figure><img src="images/state-runner-up.jpg" alt="Maya holding a State Runner-Up trophy"><figcaption>State Runner-Up</figcaption></figure>
+          <figure><img src="images/tournament-trophy.jpg" alt="Maya holding a gold tournament trophy on an indoor court"><figcaption>Tournament trophy</figcaption></figure>
+        </div>
+      </div>
+    </section>
+    <section class="cta">
+      <div class="eyebrow">Pick up a racket. Find your people.</div>
+      <h2>There is room for you on the court.</h2>
+      <p>Join Maya on Sundays from 6–8 PM at Ridge and Valley Tennis Club in Glenview, Illinois. Kids and teens of every background are welcome, and it is always free.</p>
+      <a class="button" href="lessons.html">See class details <span aria-hidden="true">→</span></a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <div><strong>✳ Tikkun Tennis</strong><br>A place for every kid to play.</div>
+      <div>Free youth tennis · Glenview, Illinois</div>
+      <div>© <span id="year"></span> Tikkun Tennis</div>
+    </div>
+  </footer>
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('nav');
+      const button = document.querySelector('.menu');
+      const open = nav.classList.toggle('open');
+      button.setAttribute('aria-expanded', String(open));
+    }
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
